@@ -17,7 +17,6 @@ let charadex = {};
 charadex.site = {
   title: "LANDFALL",
   url: "https://junijwi.github.io/LANDFALL/",
-  baseurl: "/LANDFALL/",
   description: `TODO: Description Here`
 }
 
