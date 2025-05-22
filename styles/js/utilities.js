@@ -68,6 +68,7 @@ charadex.tools = {
         title.text(titleStr);
         $('meta[name="title"]').attr("content", titleStr);
         $('meta[name="url"]').attr("content", charadex.site.url);
+        $('base').attr("href", charadex.site.baseurl);
         $('meta[name="description"]').attr("content", charadex.site.description);
       }
       return;
