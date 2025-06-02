@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         var activeTab = url.substring(url.indexOf("#") + 1);
 
         if ( $('[data-bs-target="#'+activeTab+'"]').length) {
-            $('[data-bs-target="#'+activeTab+'"]').tab('show');
+            tab = $('[data-bs-target="#'+activeTab+'"]')
+            tab.tab('show');
+            console.log(tab);
         }
 
         // priority 2 : keep activ tab according to local storage value
