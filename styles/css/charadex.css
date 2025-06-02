@@ -501,9 +501,9 @@ a:active {
 a.badge.badge-primary:hover,
 a.badge.badge-primary:focus,
 a.badge.badge-primary:active,
-.nav-pills .nav-link .active:hover,
-.nav-pills .nav-link .active:focus,
-.nav-pills .nav-link .active:active {
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:active {
   color: var(--cd-button-text-color-hover) !important;
   border-color: var(--cd-button-border-color-hover) !important;
   background-color: var(--cd-button-background-color-hover) !important;
