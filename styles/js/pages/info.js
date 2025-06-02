@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         //priority 1 : set active tab according to url
         var url = window.location.hash;
-        console.log(url);
+        console.log('hash:', url);
         var activeTab = url.substring(url.indexOf("#") + 1);
 
         if ( $('[data-bs-target="#'+activeTab+'"]').length) {
-            tab = $('[data-bs-target="#'+activeTab+'"]')
+            var tab = $('[data-bs-target="#'+activeTab+'"]')
             tab.tab('show');
-            console.log(tab);
+            console.log('targeting tab:', tab);
         }
 
         // priority 2 : keep activ tab according to local storage value
