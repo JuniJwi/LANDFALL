@@ -480,14 +480,16 @@ a:active {
 /* Buttons & Badges
 /* ============================================================= */
 
-.btn {
+.btn, 
+.nav-pills .nav-link {
   border-style: var(--cd-button-border-style) !important;
   border-width: var(--cd-button-border-width) !important;
   border-radius: var(--cd-button-border-radius) !important;
 }
 
 .btn.btn-primary,
-.badge.badge-primary {
+.badge.badge-primary,
+.nav-pills {
   color: var(--cd-button-text-color) !important;
   background-color: var(--cd-button-background-color) !important;
   border-color: var(--cd-button-border-color) !important;
@@ -498,7 +500,8 @@ a:active {
 .btn.btn-primary:active,
 a.badge.badge-primary:hover,
 a.badge.badge-primary:focus,
-a.badge.badge-primary:active {
+a.badge.badge-primary:active,
+.nav-pills .nav-link.active {
   color: var(--cd-button-text-color-hover) !important;
   border-color: var(--cd-button-border-color-hover) !important;
   background-color: var(--cd-button-background-color-hover) !important;
@@ -652,7 +655,7 @@ body {
 #main-container {
   min-height: calc(100vh - 105px);
   padding: 1rem;
-  -ml-flex: 1 1 auto !important;
+  -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
 }
 
