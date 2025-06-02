@@ -481,7 +481,7 @@ a:active {
 /* ============================================================= */
 
 .btn, 
-.nav-pills.nav-link {
+.nav-pills .nav-link {
   border-style: var(--cd-button-border-style) !important;
   border-width: var(--cd-button-border-width) !important;
   border-radius: var(--cd-button-border-radius) !important;
@@ -489,7 +489,7 @@ a:active {
 
 .btn.btn-primary,
 .badge.badge-primary,
-.nav-pills.nav-link {
+.nav-pills .nav-link {
   color: var(--cd-button-text-color) !important;
   background-color: var(--cd-button-background-color) !important;
   border-color: var(--cd-button-border-color) !important;
@@ -502,8 +502,8 @@ a.badge.badge-primary:hover,
 a.badge.badge-primary:focus,
 a.badge.badge-primary:active,
 .nav-pills.nav-link.active:hover,
-.nav-pills.nav-link.active:focus,
-.nav-pills.nav-link.active:active {
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:active {
   color: var(--cd-button-text-color-hover) !important;
   border-color: var(--cd-button-border-color-hover) !important;
   background-color: var(--cd-button-background-color-hover) !important;
