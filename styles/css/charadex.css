@@ -44,8 +44,8 @@ body {
   /* Borders
   ================================================================ */
   --cd-border-color: rgba(0, 0, 0, .1);
-  --cd-border-width: 4px;
-  --cd-border-style: outset;
+  --cd-border-width: 2px;
+  --cd-border-style: solid;
   --cd-border-radius: 1rem;
 
   /* ============================================================= */
