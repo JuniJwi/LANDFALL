@@ -46,7 +46,7 @@ body {
   --cd-border-color: rgba(0, 0, 0, .1);
   --cd-border-width: 2px;
   --cd-border-style: solid;
-  --cd-border-radius: 15%;
+  --cd-border-radius: 5px;
 
   /* ============================================================= */
   /* Navbar
