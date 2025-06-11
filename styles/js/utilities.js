@@ -45,13 +45,14 @@ charadex.tools = {
       const target = $(this);
       $.get(this.dataset.source, function (data) {
         target.replaceWith(data);
+        console.log("Loaded HTML file:", target);
       });
     });
   },
 
   // Load Page
   // Load selected areas
-  loadPage(loadAreaSelector = '', timeout = 500, loadIconSelector = '#loading') {
+  loadPage(loadAreaSelector = '', timeout = 500, loadIconSelector = '.loading') {
     setTimeout(function () {
       $(loadIconSelector).hide();
       $(loadAreaSelector).addClass('active');
