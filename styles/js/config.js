@@ -310,7 +310,7 @@ charadex.page.masterlist = {
   sheetPage: charadex.sheet.pages.masterlist,
   sitePage: 'masterlist',
   dexSelector: 'charadex',
-  profileProperty: 'name',
+  profileProperty: 'id',
 
   sort: {
     toggle: true,
@@ -358,7 +358,7 @@ charadex.page.masterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'name',
+      profileProperty: 'id',
       profileToggle: false,
 
       sort: {
@@ -459,7 +459,7 @@ charadex.page.inventory = {
       primaryProperty: 'username',
       relatedProperty: 'player',
       dexSelector: 'charadex',
-      profileProperty: 'name',
+      profileProperty: 'id',
       profileToggle: false,
 
     }
