@@ -5,17 +5,16 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/LANDFALL/">
 
   <!-- ----------------------------------------------------------------- -->
   <!-- About Your Site                                                   -->
   <!-- ----------------------------------------------------------------- -->
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="/LANDFALL/assets/favicon.png" />
   <title>Charadex Lore</title>
   <meta name="title" content="Charadex Lore" />
   <meta name="type" content="website" />
   <meta name="url" content="" />
-  <meta name="image" content="assets/meta.png" />
+  <meta name="image" content="/LANDFALL/assets/meta.png" />
   <meta name="description" content="">
 
   <!-- No AI scraping directives -->
@@ -41,10 +40,10 @@
   <!-- ----------------------------------------------------------------- -->
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+  <link rel="stylesheet" type="text/css" href="/LANDFALL/styles/css/charadex.css">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400|Rajdhani:500" rel="stylesheet">
 
 
 </head>
@@ -55,22 +54,24 @@
   <!-- --------------------------------------------------------------------
   <-- Header
   <-------------------------------------------------------------------- -->
-  <div class="load-html" id="header" data-source="includes/header.html"></div>
+  <div class="load-html" id="header" data-source="/LANDFALL/includes/header.html"></div>
 
 
   <!-- --------------------------------------------------------------------
   <-- Main List
   <-------------------------------------------------------------------- -->
-  <div class="container" id="main-container">
-    <div class="card p-md-5 p-4 mb-4">
+  <div class="container d-flex" id="main-container">
+
+    <div class="card p-md-5 p-4 mb-4 flex-fill">
 
       <!-- Title
       <!-- --------------------------------------------------------------- -->
-      <h3 class="mb-0"><a href="info/">Info</a></h3>
+      <div class="cd-hero-title m-1" style="background-image: url('/LANDFALL/assets/header.png');">
+        <div class="m-auto">Info</div>
+      </div>
 
-      <!-- Faux Folders
+      <!-- Nav Tabs
       <!-- --------------------------------------------------------------- -->
-      <hr>
       <ul class="nav nav-pills nav-justified justify-content-center m-n1">
         <li class="nav-item p-1" role="presentation">
           <button class="nav-link active" id="premise-tab" data-bs-toggle="tab" data-bs-target="#premise" type="button" role="tab" aria-controls="premise" aria-selected="true">Premise</button>
@@ -88,18 +89,18 @@
 
       <!-- Page Tabs
       <!-- --------------------------------------------------------------- -->
-      <div class="tab-content" style="height: 590px;">
-        <div class="h-100 tab-pane fade active show overflow-auto" id="premise" role="tabpanel" aria-labelledby="home-tab">
-          <div class="load-html" id="rules-content" data-source="info/premise.html"></div>
+      <div class="tab-content card card-body bg-faded m-1">
+        <div class="h-100 tab-pane fade active show" id="premise" role="tabpanel" aria-labelledby="home-tab">
+          <div class="load-html" id="rules-content" data-source="premise.html"></div>
         </div>
-        <div class="h-100 tab-pane fade overflow-auto" id="lore" role="tabpanel" aria-labelledby="lore-tab">
-          <div class="load-html" id="rules-content" data-source="info/lore.html"></div>
+        <div class="h-100 tab-pane fade" id="lore" role="tabpanel" aria-labelledby="lore-tab">
+          <div class="load-html" id="rules-content" data-source="lore.html"></div>
         </div>
-        <div class="h-100 tab-pane fade overflow-auto" id="rules" role="tabpanel" aria-labelledby="rules-tab">
-          <div class="load-html" id="rules-content" data-source="info/rules.html"></div>
+        <div class="h-100 tab-pane fade" id="rules" role="tabpanel" aria-labelledby="rules-tab">
+          <div class="load-html" id="rules-content" data-source="rules.html"></div>
         </div>
-        <div class="h-100 tab-pane fade overflow-auto" id="mechanics" role="tabpanel" aria-labelledby="mechanics-tab">
-          <div class="load-html" id="mechanics-content" data-source="info/mechanics.html"></div>
+        <div class="h-100 tab-pane fade" id="mechanics" role="tabpanel" aria-labelledby="mechanics-tab">
+          <div class="load-html" id="mechanics-content" data-source="mechanics.html"></div>
         </div>
       </div>
 
@@ -109,7 +110,7 @@
   <!-- --------------------------------------------------------------------
   <-- Footer
   <-------------------------------------------------------------------- -->
-  <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+  <div class="load-html" id="footer" data-source="/LANDFALL/includes/footer.html"></div>
 
   <!-- ----------------------------------------------------------------- -->
   <!-- JS                                                                -->
@@ -123,8 +124,8 @@
 
 
   <!-- Charadex Script -->
-  <script src="styles/js/pages/base.js" type="module"></script>
-  <script src="styles/js/pages/info.js" type="module"></script>
+  <script src="/LANDFALL/styles/js/pages/base.js" type="module"></script>
+  <script src="/LANDFALL/styles/js/pages/info.js" type="module"></script>
 
   
 </body>

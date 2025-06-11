@@ -5,17 +5,16 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/LANDFALL/">
 
   <!-- ----------------------------------------------------------------- -->
   <!-- About Your Site                                                   -->
   <!-- ----------------------------------------------------------------- -->
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="/LANDFALL/assets/favicon.png" />
   <title>Charadex</title>
   <meta name="title" content="Charadex" />
   <meta name="type" content="website" />
   <meta name="url" content="/" />
-  <meta name="image" content="assets/meta.png" />
+  <meta name="image" content="/LANDFALL/assets/meta.png" />
   <meta name="description" content="">
 
   <!-- No AI scraping directives -->
@@ -28,8 +27,6 @@
   <!-- ----------------------------------------------------------------- -->
 
   <!-- Bootstrap CSS -->
-  <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
-  <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- Font Awesome Icons -->
@@ -41,10 +38,10 @@
   <!-- ----------------------------------------------------------------- -->
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+  <link rel="stylesheet" type="text/css" href="/LANDFALL/styles/css/charadex.css">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400|Rajdhani:500" rel="stylesheet">
 
 
 </head>
@@ -54,7 +51,7 @@
   <!-- --------------------------------------------------------------------
   <-- Header
   <-------------------------------------------------------------------- -->
-  <div class="load-html" data-source="includes/header.html"></div>
+  <div class="load-html" data-source="/LANDFALL/includes/header.html"></div>
 
   <!-- --------------------------------------------------------------------
   <-- Main List
@@ -65,86 +62,49 @@
 
       <!-- Hero Image & Title
       <!-- --------------------------------------------------------------- -->
-      <div class="cd-hero-title mb-4" style="background-image: url('./assets/meta.png');">
-        <div class="m-auto">LANDFALL</div>
+      <div class="cd-hero-title m-1" style="background-image: url('/LANDFALL/assets/header.png');">
+        <div class="m-auto"><span class="text-muted">LAND</span>FALL</div>
       </div>
 
       <!-- Description
       <!-- --------------------------------------------------------------- -->
-      <div class="px-4 text-muted">
-        <p>LANDFALL is a hub-style roleplay group; there is a central place for day-to-day roleplay and downtime, marked by periods of short-term high activity campaigns run by moderators or players.</p>
-      </div>
+      <div class="card card-body bg-faded m-1">
+        <p class="text-muted">“Quote Here.”</p>
 
-      <!-- Links
-      <!-- --------------------------------------------------------------- -->
-      <hr class="my-4">
-      <div class="row no-gutters m-n1 mb-n2">
-
-        <div class="col-lg-4 p-1">
-          <h5>Info</h5>
-          <div class="px-3">
-            <a class="btn btn-primary d-block mb-1" href="info/premise.html">Premise</a>
-            <a class="btn btn-primary d-block mb-1" href="info/lore.html">Lore</a>
-            <a class="btn btn-primary d-block mb-1" href="info/rules.html">Rules</a>
-            <a class="btn btn-primary d-block mb-1" href="info/mechanics.html">Mechanics</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 p-1">
-          <h5>Community</h5>
-          <div class="px-3">
-            <a class="btn btn-primary d-block mb-1" href="#">Toyhou.se</a>
-            <a class="btn btn-primary d-block mb-1" href="#">Discord</a>
-            <a class="btn btn-primary d-block mb-1" href="prompts/">Prompts</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 p-1">
-          <h5>Resources</h5>
-          <div class="px-3">
-            <a class="btn btn-primary d-block mb-1" href="#">Help Desk</a>
-            <a class="btn btn-primary d-block mb-1" href="faq.html">FAQ</a>
-            <a class="btn btn-primary d-block mb-1" href="terms.html">TOS</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Social Media Links
-    <!-- --------------------------------------------------------------- -->
-      <hr class="my-4">
-      <div class="text-center mb-md-n4 font-weight-bold">
-
-        <a class="mx-3" href="#"><i class="fas fa-floppy-disk fa-fw me-1"></i> Toyhou.se</a>
-        <a class="mx-3" href="#"><i class="fab fa-discord fa-fw me-1"></i> Discord</a>
-        <a class="mx-3" href="#"><i class="fas fa-cloud fa-fw me-1"></i> BlueSky</a>
-
+        <hr class="mb-4 mx-5">
+        <p>
+          Premise description ic
+        </p>
+        <ul>
+          <li>
+            LAND<span class="text-muted">FALL</span> is a hub-style roleplay group; there is a central place for day-to-day roleplay and downtime, 
+              marked by periods of short-term high activity campaigns run by <span class="text-muted">(usually)</span> moderators or <span class="text-muted">(sometimes)</span> players.
+          </li>
+          <li>
+            In addition to roleplaying in a dedicated discord server, there will be optional in character <span class="text-muted">(IC)</span> social media accounts on bsky.app
+          </li>
+        </ul>
+        <p>
+          <strong>Influences for vibes:</strong> ENA
+        </p>
       </div>
 
     </div>
       
     <!-- Designs
     <!-- --------------------------------------------------------------- -->
-    <div class="card p-md-5 p-4 mb-3" id="design-gallery">
-      <h4 class="mb-0"><a href="masterlist.html">Recent Designs</a></h4>
-      <hr>
-      <div class="row no-gutters design-list softload m-n2"></div>
+    <div class="card p-md-5 p-4 mb-3" id="charadex-gallery">
+      <h1 class="mb-0 text-center"><a href="masterlist.html">Newest Characters</a></h1>
+      <div class="row no-gutters charadex-list softload m-n2"></div>
+      <p class="text-center"><i class="fa-solid fa-infinity fa-spin loading"></i></p>
     </div>
 
     <!-- Prompts
     <!-- --------------------------------------------------------------- -->
     <div class="card p-md-5 p-4 mb-3" id="prompt-gallery">
-      <h4 class="mb-0"><a href="prompts/">Prompts</a></h4>
-      <hr>
+      <h1 class="mb-0 text-center"><a href="prompts.html">Recent prompts</a></h1>
       <div class="row no-gutters prompt-list softload m-n2"></div>
-    </div>
-
-    <!-- Staff
-    <!-- --------------------------------------------------------------- -->
-    <div class="card p-md-5 p-4 mb-3" id="staff-gallery">
-      <h4 class="mb-0"><a href="staff.html">Staff</a></h4>
-      <hr>
-      <div class="row no-gutters staff-list softload m-n2"></div>
+      <p class="text-center"><i class="fa-solid fa-infinity fa-spin loading"></i></p>
     </div>
 
     
@@ -155,7 +115,7 @@
   <!-- --------------------------------------------------------------------
   <-- Footer
   <-------------------------------------------------------------------- -->
-  <div class="load-html" data-source="includes/footer.html"></div>
+  <div class="load-html" data-source="/LANDFALL/includes/footer.html"></div>
 
 
 
@@ -164,56 +124,8 @@
   <-- Do not remove 'display:none;'
   <-------------------------------------------------------------------- -->
   <div style="display:none;">
-
-    <!-- Designs
-    <!-- --------------------------------------------------------------- -->
-    <div class="col-md-3 col-sm-6 p-2" id="design-gallery-item">
-      <div class="card bg-faded h-100">
-        <div class="card-header bg-faded text-center">
-          <h5 class="mb-0">
-            <a class="profileid profilelink" href=""></a>
-          </h5>
-        </div>
-        <div class="card-body cd-gallery-card d-flex flex-fill">
-          <img class="image img-fluid m-auto" src="" >
-        </div>
-        <div class="card-footer bg-faded text-center">
-          <a class="owner ownerlink small" href=""></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Prompts
-    <!-- --------------------------------------------------------------- -->
-    <div class="col-md-4 col-sm-6 p-2" id="prompt-gallery-item">
-      <div class="card bg-faded">
-        <h6 class="card-header bg-faded text-truncate">
-          <a class="profileid profilelink"></a>
-        </h6>
-        <div class="cd-prompt-background"></div>
-        <div class="card-body small description"></div>
-      </div>
-    </div>
-
-    <!-- Staff
-    <!-- --------------------------------------------------------------- -->
-    <div class="col-md-4 col-sm-6 p-2" id="staff-gallery-item">
-      <div class="card bg-faded p-3 h-100">
-        <div class="row no-gutters m-n2">
-          <div class="col-md-5 p-2">
-            <img class="image img-thumbnail img-fluid m-auto" src="">
-          </div>
-          <div class="col-md-7 p-2">
-            <div class="text-truncate">
-              <a class="profileid profilelink"></a>
-            </div>
-            <hr class="my-2">
-            <span class="small jobtitle"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <div class="load-html" data-source="/LANDFALL/includes/character-thumb.html"></div>
+    <div class="load-html" data-source="/LANDFALL/includes/prompt-thumb.html"></div>
   </div>
 
   <!-- ----------------------------------------------------------------- -->
@@ -226,10 +138,9 @@
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
   <!-- Charadex Script -->
-  <script src="styles/js/pages/base.js" type="module"></script>
-  <script src="styles/js/pages/index.js" type="module"></script>
+  <script src="/LANDFALL/styles/js/pages/base.js" type="module"></script>
+  <script src="/LANDFALL/styles/js/pages/index.js" type="module"></script>
 
 
 </body>

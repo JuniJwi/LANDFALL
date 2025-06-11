@@ -31,17 +31,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   );
 
 
-  /* Staff
-  ===================================================================== */
-  let staff = await charadex.initialize.page(null, charadex.page.index.staff, (arr) => {
-    
-    // Splice the silly little array
-    let sliceAmount = charadex.page.index.staff.amount || 6;
-    arr.splice(sliceAmount, arr.length);
-
-  });
-
-
   /* Designs
   ===================================================================== */
   let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
@@ -55,6 +44,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Load Page
   ===================================================================== */
-  charadex.tools.loadPage('.softload', 100);
+  charadex.tools.loadPage('.softload', 500);
 
 });

@@ -66,7 +66,7 @@ charadex.page.items = {
 
   sheetPage: charadex.sheet.pages.items,
   sitePage: 'items',
-  dexSelector: 'charadex',
+  dexSelector: 'item',
   profileProperty: 'item',
 
   sort: {
@@ -164,7 +164,7 @@ charadex.page.prompts = {
 
   sheetPage: charadex.sheet.pages.prompts,
   sitePage: 'prompts',
-  dexSelector: 'charadex',
+  dexSelector: 'prompt',
   profileProperty: 'title',
 
   sort: {
@@ -310,7 +310,7 @@ charadex.page.masterlist = {
   sheetPage: charadex.sheet.pages.masterlist,
   sitePage: 'masterlist',
   dexSelector: 'charadex',
-  profileProperty: 'design',
+  profileProperty: 'name',
 
   sort: {
     toggle: true,
@@ -358,7 +358,7 @@ charadex.page.masterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: 'name',
       profileToggle: false,
 
       sort: {
@@ -387,7 +387,7 @@ charadex.page.inventory = {
   // Dex Set Up
   sheetPage: charadex.sheet.pages.inventory,
   sitePage: 'inventories',
-  dexSelector: 'charadex',
+  dexSelector: 'player',
   profileProperty: 'username',
 
   // Dex Options
@@ -457,9 +457,9 @@ charadex.page.inventory = {
       sheetPage: charadex.sheet.pages.masterlist,
       sitePage: 'masterlist',
       primaryProperty: 'username',
-      relatedProperty: 'owner',
-      dexSelector: 'designs',
-      profileProperty: 'design',
+      relatedProperty: 'player',
+      dexSelector: 'charadex',
+      profileProperty: 'name',
       profileToggle: false,
 
     }
@@ -472,7 +472,7 @@ charadex.page.inventory = {
 
     sheetPage: charadex.sheet.pages.items,
     sitePage: 'items',
-    dexSelector: 'inventory',
+    dexSelector: 'item',
     profileProperty: 'item',
     profileToggle: false,
 

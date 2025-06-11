@@ -105,7 +105,7 @@ body {
 
   /* Divider */
   --cd-navbar-dropdown-divider: rgba(255, 255, 255, .12);
-  --cd-navbar-dropdown-border-radius: 0 0 var(--cd-border-radius) var(--cd-border-radius);
+  --cd-navbar-dropdown-border-radius: var(--cd-border-radius);
 
 
   /* ============================================================= */
@@ -125,8 +125,8 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color: #F58531;
-  --cd-link-text-color-hover: var(--cd-secondary-color);
+  --cd-link-text-color: var(--cd-primary-color);
+  --cd-link-text-color-hover: var(--cd-faded-text-color);
 
 
   /* ============================================================= */
@@ -164,10 +164,11 @@ body {
 
   /* Background */
   --cd-card-background-color: var(--cd-content-background-color);
-  --cd-card-header-background-color: var(--cd-card-background-color);
+  --cd-card-header-background-color: var(--cd-secondary-color);
 
   /* Text */
   --cd-card-header-font-family: var(--cd-header-font-family);
+  --cd-card-header-font-color: var(--cd-secondary-text-color);
 
   /* Border */
   --cd-card-border-width: var(--cd-border-width);
@@ -226,6 +227,7 @@ body {
   /* Global Text */
   color: var(--cd-body-text-color);
   font-family: var(--cd-body-font-family);
+  font-size: 11pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -274,8 +276,14 @@ a:active {
   color: var(--cd-navbar-brand-color-hover) !important;
 }
 
+.navbar .navbar-brand strong {
+  font-weight: normal;
+  color: var(--cd-navbar-brand-color-hover) !important;
+}
+
 .navbar .navbar-nav .nav-link {
   color: var(--cd-navbar-link-color) !important;
+  font-size: 14pt;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -458,6 +466,7 @@ a:active {
 
 .card-header {
   background-color: var(--cd-card-header-background-color) !important;
+  color: var(--cd-card-header-font-color) !important;
   border-bottom-color: var(--cd-card-border-color) !important;
   border-bottom-width: var(--cd-card-border-width) !important;
   border-bottom-style: var(--cd-card-border-style) !important;
@@ -467,6 +476,7 @@ a:active {
 
 .card-footer {
   background-color: var(--cd-card-header-background-color) !important;
+  color: var(--cd-card-header-font-color) !important;
   border-top-color: var(--cd-card-border-color) !important;
   border-top-width: var(--cd-card-border-width) !important;
   border-top-style: var(--cd-card-border-style) !important;
@@ -475,6 +485,13 @@ a:active {
 }
 
 
+
+/* ============================================================= */
+/* Text
+/* ============================================================= */
+.text-justify {
+  text-align: justify;
+}
 
 /* ============================================================= */
 /* Buttons & Badges
@@ -569,16 +586,24 @@ a.badge.badge-primary:active,
 }
 
 .bg-reset {
-  background-color: var(--cd-content-background-color) !important;
+  background-color: var(--cd-input-background-color) !important;
 }
 
 .text-muted {
   color: var(--cd-faded-text-color) !important;
 }
 
+.text-loud {
+  color: var(--cd-primary-color) !important;
+}
+
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--cd-navbar-font-family) !important;
+}
+h1 a, h2 a, h3 a,
+h4 a, h5 a, h6 a {
+  text-decoration: none;
 }
 
 hr {
@@ -609,6 +634,28 @@ img {
   border-radius: 0 !important;
 }
 
+/* Custom bullet list style */
+ul {
+  list-style-type: ">> ";
+}
+
+ul li {
+  margin-bottom: .5em;
+}
+
+ul li::marker {
+  color: var(--cd-primary-color);
+}
+
+ol li {
+  margin-bottom: .5em;
+  padding-left: .5em;
+}
+
+ol li::marker {
+  color: var(--cd-faded-text-color);
+}
+
 
 /* ============================================================= */
 /* Loading
@@ -621,7 +668,7 @@ img {
 
 .softload.active {
   opacity: 1;
-  transition: opacity 2s ease;
+  transition: opacity .5s ease;
 }
 
 /* Fades container in on load so its not as jarring */
@@ -663,7 +710,7 @@ body {
 
 @media (min-width: 768px) {
   #main-container {
-    padding: 5rem 1.5rem;
+    padding: 1rem .5rem;
   }
 }
 
@@ -699,6 +746,7 @@ p:last-child {
 }
 
 .cd-gallery-card {
+  background-color: var(--cd-faded-background-color);
   min-height: calc(175px + 2.5rem);
 }
 
@@ -735,9 +783,8 @@ p:last-child {
   background-color: var(--cd-faded-background-color);
   border-radius: var(--cd-border-radius);
   font-family: var(--cd-header-font-family);
+  text-transform: uppercase;
   display: flex;
-  padding: 1.5rem;
-  min-height: 250px;
   font-weight: 800;
   font-size: 2.5rem;
 }
@@ -745,37 +792,26 @@ p:last-child {
 @media (min-width: 768px) {
   .cd-hero-title {
     letter-spacing: 2px;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
 
 /* ============================================================= */
-/* Rarity
+/* Class
 /* ============================================================= */
 
-.badge-common {
-  background-color: var(--cd-rarity-common-bg);
-  color: var(--cd-rarity-common-txt);
+.badge-safe {
+  background-color: var(--cd-class-safe-bg);
+  color: var(--cd-class-safe-txt);
 }
 
-.badge-uncommon {
-  background-color: var(--cd-rarity-uncommon-bg);
-  color: var(--cd-rarity-uncommon-txt);
+.badge-euclid {
+  background-color: var(--cd-class-euclid-bg);
+  color: var(--cd-class-euclid-txt);
 }
 
-.badge-rare {
-  background-color: var(--cd-rarity-rare-bg);
-  color: var(--cd-rarity-rare-txt);
-}
-
-.badge-veryrare {
-  background-color: var(--cd-rarity-veryrare-bg);
-  color: var(--cd-rarity-veryrare-txt);
-}
-
-.badge-legendary,
-.badge-mythic {
-  background-color: var(--cd-rarity-legendary-bg);
-  color: var(--cd-rarity-legendary-txt);
+.badge-keter {
+  background-color: var(--cd-class-keter-bg);
+  color: var(--cd-class-keter-txt);
 }

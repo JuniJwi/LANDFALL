@@ -25,11 +25,15 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
         }
 
+        // Set the player url
+        let pageUrl = charadex.url.getPageUrl(charadex.page.inventory.sitePage);
+        $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: listData.profileArray[0].player }));
+
       }
 
     }
   );
   
-  charadex.tools.loadPage('.softload', 100);
+  charadex.tools.loadPage('.softload', 500);
   
 });
